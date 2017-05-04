@@ -4,6 +4,8 @@
 
     <h1>メッセージ一覧</h1>
 
+    @include('commons.error_messages')
+
     @if (count($messages) > 0)
         <ul>
             @foreach ($messages as $message)
